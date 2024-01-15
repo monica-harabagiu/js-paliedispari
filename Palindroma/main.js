@@ -9,7 +9,6 @@ function isPalindrome(parola) {
 
     let parolaArray = Array.from(parola)
     console.log(parolaArray)
-    console.log(parolaArray.join(''))
 
     let invertArray = []
 
@@ -18,9 +17,19 @@ function isPalindrome(parola) {
     }
 
     console.log(invertArray)
-    console.log(invertArray.join(''))
 
-    if (parolaArray.join('') === invertArray.join('')) {
+
+    let stessaParola = true
+
+    for (let i = 0; i < parolaArray.length; i++) {
+
+        if (parolaArray[i] !== invertArray[i]) {
+            stessaParola = false
+            break
+        }
+    }
+
+    if (stessaParola) {
         console.log("La parola inserita è palindroma")
     } else {
         console.log("La parola inserita non è palindroma")
