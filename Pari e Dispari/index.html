@@ -9,7 +9,26 @@
 
 <body>
 
+    <div>
+        <label for="pari-dispari">Il risultato sarà pari o dispari?</label>
+        <select name="pari-dispari" id="pari-dispari">
+            <option value="">Seleziona pari o dispari</option>
+            <option value="pari">Pari</option>
+            <option value="dispari">Dispari</option>
+        </select>
+    </div>
 
+    <div>
+        <label for="numero">Numero</label>
+        <input type="number" name="numero" id="numero-utente" placeholder="Inserisci un numero da 1 a 5">
+    </div>
+
+    <button id="inizia-gioco">Gioca</button>
+
+
+    <div id="risultato">
+
+    </div>
 
 
     <script src="./main.js"></script>
